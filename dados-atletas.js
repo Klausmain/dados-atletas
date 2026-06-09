@@ -20,7 +20,7 @@ class Atleta {
   }
 
   calculaMediaValida() {
-    let notas = [...this.notas].sort((a, b) => a - b);
+    let notas = [this.notas].sort((a, b) => a - b);
     return (notas[1] + notas[2] + notas[3]) / 3;
   }
 
