@@ -8,11 +8,20 @@ class Atleta {
   }
 
   calculaCategoria() {
-    if (this.idade <= 11) return "Infantil";
-    if (this.idade <= 13) return "Juvenil";
-    if (this.idade <= 15) return "Intermediário";
-    if (this.idade <= 30) return "Adulto";
-    return "Sem categoria";
+    if (this.idade <= 11){
+     return "Infantil";
+  }
+   else if (this.idade <= 13){
+      return "Juvenil";
+   }
+    else if (this.idade <= 15){
+      return "Intermediário";
+    }
+    else if (this.idade <= 30){
+      return "Adulto";
+    }
+    else{
+      return "Sem categoria";
   }
 
   calculaIMC() {
